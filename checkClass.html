@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function is_Class(str) {
+        let regexp = /^[CPA]+[0-9]{4}([GHIKLM])$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+    console.log(is_Class("C5062G"));
+    console.log(is_Class(" M0318G"));
+</script>
+</body>
+</html>
